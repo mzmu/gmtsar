@@ -89,7 +89,7 @@ else if ($SAT == "LT1") then
   echo ""
 else if ($SAT == "NSR_A" || $SAT == "NSR_B") then
   echo "# SLC scale factor to convert float to int"
-  echo "SLC_factor = 40000.0"
+  echo "SLC_factor = 30000.0"
   echo ""
 endif
 
@@ -160,7 +160,7 @@ echo "# Set the decimation to be 1 if you want higher resolution images (filter 
 echo "# Set the decimation to be 2 if you want images with smaller file size (filter wavelength >= 160 for NSR_A)"
 echo "# "
 if ($SAT == "RS2" || $SAT == "TSX" || $SAT == "NSR_B") then
-  echo "dec_factor = 1 "
+  echo "dec_factor = 2 "
 else if ($SAT == "ALOS2_SCAN") then
   echo "dec_factor = 4 "
 else
