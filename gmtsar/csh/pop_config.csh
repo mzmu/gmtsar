@@ -116,7 +116,11 @@ echo "topo_phase = 1"
 echo "# if above parameter = 1 then one should have put dem.grd in topo/"
 echo ""
 echo "# interpolation approach, 0 for surface, 1 for triangulation"
+if ( $SAT == "NSR_A" || $SAT == "NSR_B") then
+echo "topo_interp_mode = 1"
+else
 echo "topo_interp_mode = 0"
+endif
 echo ""
 echo "# topo_ra shift (1 -- yes; 0 -- no)"
 
